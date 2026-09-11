@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VOLT — аренда, продажа и сервис электровелосипедов в Москве</title>
+<meta name="description" content="Аренда электровелосипедов от 150 ₽/час, продажа новых моделей и полный сервис: ТО, замена аккумулятора, ремонт. Доставка по Москве за 30 минут.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="header__inner container">
+    <a href="#top" class="logo"><span class="logo__bolt">⚡</span>VOLT<span class="logo__suffix">-bike</span></a>
+    <nav class="nav" id="nav">
+      <a href="#rent">Аренда</a>
+      <a href="#sale">Продажа</a>
+      <a href="#service">Сервис</a>
+      <a href="#price">Тарифы</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header__actions">
+      <a href="tel:+79001234567" class="header__phone">+7 (900) 123-45-67</a>
+      <a href="#form" class="btn btn--primary btn--sm">Записаться</a>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <span class="tag">Аренда · Продажа · Сервис</span>
+        <h1>Электровелосипеды в Москве — без забот, с батарейкой на весь день</h1>
+        <p class="hero__lead">Арендуйте на час или на месяц, купите новый VOLT или приведите свой в порядок в нашем сервисе. Доставка в пределах МКАД за 30 минут, без залога наличными.</p>
+        <div class="hero__cta">
+          <a href="#rent" class="btn btn--primary">Арендовать велосипед</a>
+          <a href="#sale" class="btn btn--ghost">Подобрать модель для покупки</a>
+        </div>
+        <div class="hero__stats">
+          <div class="stat"><span class="stat__num" data-target="500">0</span><span class="stat__label">велосипедов в парке</span></div>
+          <div class="stat"><span class="stat__num" data-target="15000">0</span><span class="stat__label">поездок в этом году</span></div>
+          <div class="stat"><span class="stat__num" data-target="30">0</span><span class="stat__label">минут на доставку</span></div>
+          <div class="stat"><span class="stat__num" data-target="49" data-decimal>0</span><span class="stat__label">средний рейтинг из 5.0</span></div>
+        </div>
+      </div>
+      <div class="hero__card">
+        <img src="https://loremflickr.com/640/760/electricbike,city/all?lock=21" alt="Электровелосипед VOLT City на улице Москвы" loading="eager">
+        <div class="hero__badge">
+          <strong>50–70 км</strong>
+          <span>запас хода на одной зарядке</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="adv-section">
+    <div class="container">
+      <h2>Почему выбирают VOLT</h2>
+      <p class="section__lead">Пять лет на рынке электротранспорта — знаем, что важно клиенту: скорость, надёжность и понятные условия.</p>
+      <div class="adv-grid">
+        <div class="adv">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          <h3>Доставка за 30 минут</h3>
+          <p>Привезём выбранную модель по Москве в пределах МКАД в течение получаса после подтверждения заявки.</p>
+        </div>
+        <div class="adv">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 3 4 6v6c0 5 3.4 8.7 8 9 4.6-.3 8-4 8-9V6l-8-3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Без залога наличными</h3>
+          <p>Оформляем аренду по паспорту и банковской карте — держать крупную сумму на руках не нужно.</p>
+        </div>
+        <div class="adv">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <h3>Сервис в день обращения</h3>
+          <p>Базовое ТО, замена аккумулятора и мелкий ремонт — в 90% случаев отдаём велосипед в тот же день.</p>
+        </div>
+        <div class="adv">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.6"/></svg>
+          <h3>Гарантия на все модели</h3>
+          <p>12 месяцев гарантии на новые велосипеды, 6 месяцев на аккумулятор при покупке с пробегом.</p>
+        </div>
+        <div class="adv">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="4" y="2" width="16" height="20" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M9 6h6M9 18h.01" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <h3>Приложение для аренды</h3>
+          <p>Продлеваете срок, отслеживаете заряд и вызываете подменный велосипед в пару касаний.</p>
+        </div>
+        <div class="adv">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 17h16M6 17V9l6-4 6 4v8M9 17v-5h6v5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          <h3>Подменный велосипед</h3>
+          <p>Если ваш VOLT уехал на сервис дольше суток — выдаём подмену бесплатно, без простоя.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="rent">
+    <div class="container">
+      <h2>Аренда электровелосипедов</h2>
+      <p class="section__lead">Почасово, посуточно или на месяц — с возможностью выкупа в счёт уже оплаченной аренды.</p>
+      <div class="services-grid">
+        <div class="service">
+          <img src="https://loremflickr.com/400/260/electricbike,street/all?lock=1" alt="Почасовая аренда электровелосипеда">
+          <div class="service__body">
+            <h3>Почасовая аренда</h3>
+            <p>Для одной поездки по городу — оплата за фактическое время, без переплат.</p>
+            <span class="service__price">от 150 ₽/час</span>
+          </div>
+        </div>
+        <div class="service">
+          <img src="https://loremflickr.com/400/260/ebike,park/all?lock=2" alt="Суточная аренда электровелосипеда">
+          <div class="service__body">
+            <h3>Суточная аренда</h3>
+            <p>Полный день с зарядкой в комплекте — берите на выходные или командировку.</p>
+            <span class="service__price">от 1 200 ₽/сутки</span>
+          </div>
+        </div>
+        <div class="service">
+          <img src="https://loremflickr.com/400/260/electricbicycle,commute/all?lock=3" alt="Помесячная аренда электровелосипеда">
+          <div class="service__body">
+            <h3>Помесячная аренда</h3>
+            <p>Выгодно для ежедневных поездок на работу — фиксированная цена без скрытых доплат.</p>
+            <span class="service__price">от 12 000 ₽/мес</span>
+          </div>
+        </div>
+        <div class="service">
+          <img src="https://loremflickr.com/400/260/ebike,cargo/all?lock=4" alt="Долгосрочная аренда со скидкой">
+          <div class="service__body">
+            <h3>Долгосрочная аренда</h3>
+            <p>От 3 месяцев — скидка до 20% и приоритетная замена при поломке.</p>
+            <span class="service__price">от 9 600 ₽/мес</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services services--alt" id="sale">
+    <div class="container">
+      <h2>Продажа электровелосипедов</h2>
+      <p class="section__lead">Новые модели с гарантией и проверенные велосипеды с пробегом после диагностики.</p>
+      <div class="services-grid">
+        <div class="service">
+          <img src="https://loremflickr.com/400/260/electricbike,new/all?lock=5" alt="Новый электровелосипед VOLT City">
+          <div class="service__body">
+            <h3>Новые модели VOLT</h3>
+            <p>Городские, туристические и грузовые — тест-драйв перед покупкой в шоуруме.</p>
+            <span class="service__price">от 79 000 ₽</span>
+          </div>
+        </div>
+        <div class="service">
+          <img src="https://loremflickr.com/400/260/ebike,secondhand/all?lock=6" alt="Электровелосипед с пробегом после диагностики">
+          <div class="service__body">
+            <h3>С пробегом, после диагностики</h3>
+            <p>Бывшие в прокате велосипеды: полное ТО, новый комплект тормозных колодок, гарантия 6 мес.</p>
+            <span class="service__price">от 45 000 ₽</span>
+          </div>
+        </div>
+        <div class="service">
+          <img src="https://loremflickr.com/400/260/bicycle,shop/all?lock=7" alt="Trade-in обычного велосипеда на электровелосипед">
+          <div class="service__body">
+            <h3>Trade-in вашего велосипеда</h3>
+            <p>Оценим обычный велосипед и зачтём его стоимость в покупку электрического.</p>
+            <span class="service__price">оценка бесплатно</span>
+          </div>
+        </div>
+        <div class="service">
+          <img src="https://loremflickr.com/400/260/bicycle,fitting/all?lock=8" alt="Индивидуальный подбор модели электровелосипеда">
+          <div class="service__body">
+            <h3>Индивидуальный подбор</h3>
+            <p>Учтём рост, маршрут и бюджет — подберём модель и мощность двигателя под задачу.</p>
+            <span class="service__price">бесплатно</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="service">
+    <div class="container">
+      <h2>Сервисный центр</h2>
+      <p class="section__lead">Обслуживаем электровелосипеды любых марок, не только собственного парка.</p>
+      <div class="services-grid">
+        <div class="service">
+          <img src="https://loremflickr.com/400/260/bicycle,repair/all?lock=9" alt="Техническое обслуживание электровелосипеда">
+          <div class="service__body">
+            <h3>ТО и диагностика</h3>
+            <p>Проверка тормозов, трансмиссии, электроники и аккумулятора — с распечаткой отчёта.</p>
+            <span class="service__price">от 990 ₽</span>
+          </div>
+        </div>
+        <div class="service">
+          <img src="https://loremflickr.com/400/260/battery,electronic/all?lock=10" alt="Замена аккумулятора электровелосипеда">
+          <div class="service__body">
+            <h3>Замена аккумулятора</h3>
+            <p>Оригинальные батареи 36V и 48V в наличии — установка в течение часа.</p>
+            <span class="service__price">от 8 900 ₽</span>
+          </div>
+        </div>
+        <div class="service">
+          <img src="https://loremflickr.com/400/260/electronics,repair/all?lock=11" alt="Ремонт электроники электровелосипеда">
+          <div class="service__body">
+            <h3>Ремонт электроники</h3>
+            <p>Контроллеры, дисплеи, датчики скорости — диагностика и ремонт мотор-колеса.</p>
+            <span class="service__price">от 1 500 ₽</span>
+          </div>
+        </div>
+        <div class="service">
+          <img src="https://loremflickr.com/400/260/bicycle,tire/all?lock=12" alt="Замена покрышек и камер">
+          <div class="service__body">
+            <h3>Шиномонтаж и расходники</h3>
+            <p>Замена покрышек, камер, тормозных колодок и цепи — с выездом при необходимости.</p>
+            <span class="service__price">от 1 200 ₽</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="price" id="price">
+    <div class="container">
+      <h2>Тарифы на аренду по моделям</h2>
+      <p class="section__lead">Цены за час, сутки и месяц — залог входит в стоимость, шлем и замок выдаём бесплатно.</p>
+      <div class="price-table-wrap">
+        <table class="price-table">
+          <thead>
+            <tr><th>Модель</th><th>Характеристики</th><th>Час</th><th>Сутки</th><th>Месяц</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>VOLT City</td><td>25 км/ч, запас хода 50 км</td><td>150 ₽</td><td>1 200 ₽</td><td>12 000 ₽</td></tr>
+            <tr><td>VOLT Fold</td><td>складной, компактный, 40 км</td><td>180 ₽</td><td>1 400 ₽</td><td>14 000 ₽</td></tr>
+            <tr><td>VOLT Trail</td><td>полный привод, 45 км, бездорожье</td><td>220 ₽</td><td>1 800 ₽</td><td>18 000 ₽</td></tr>
+            <tr><td>VOLT Cargo</td><td>грузовой, до 120 кг нагрузки</td><td>250 ₽</td><td>2 000 ₽</td><td>20 000 ₽</td></tr>
+            <tr><td>VOLT Max</td><td>500 Вт, запас хода 70 км</td><td>300 ₽</td><td>2 400 ₽</td><td>24 000 ₽</td></tr>
+            <tr><td>Шлем и замок</td><td>выдаются на весь срок аренды</td><td colspan="3">включено</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <div class="container">
+      <h2>Как проходит аренда или покупка</h2>
+      <div class="process-grid">
+        <div class="step"><span class="step__num">1</span><h3>Заявка</h3><p>Оставляете заявку на сайте или звоните — уточняем задачу и сроки.</p></div>
+        <div class="step"><span class="step__num">2</span><h3>Подбор модели</h3><p>Рекомендуем модель под маршрут, вес груза и бюджет.</p></div>
+        <div class="step"><span class="step__num">3</span><h3>Доставка или шоурум</h3><p>Привозим по адресу за 30 минут или встречаем в шоуруме на Ленинском.</p></div>
+        <div class="step"><span class="step__num">4</span><h3>Поездка</h3><p>Катаетесь, продлеваете срок в приложении при необходимости.</p></div>
+        <div class="step"><span class="step__num">5</span><h3>Возврат или выкуп</h3><p>Возвращаете велосипед или выкупаете его с зачётом части аренды.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <h2>Отзывы клиентов</h2>
+      <div class="reviews__rating">
+        <span class="reviews__score">4.9</span>
+        <div>
+          <div class="stars">★★★★★</div>
+          <span>на основе 214 отзывов</span>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>Арендовал VOLT Max на неделю для доставки заказов — запаса хода хватает на весь день без подзарядки. Привезли за 25 минут.</p>
+          <span class="review__author">Дмитрий К.</span>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>Купили VOLT City ребёнку в институт. Через месяц скрипела тормозная колодка — заменили по гарантии за час, без вопросов.</p>
+          <span class="review__author">Марина С.</span>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>Сдавали свой электровелосипед на замену аккумулятора — предупредили о сроках честно, уложились день в день, батарея держит заряд лучше прежней.</p>
+          <span class="review__author">Артём В.</span>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>Помесячная аренда VOLT Fold — удобно складывать в багажник, а зимой оставляю в подъезде. Сервис ни разу не подвёл.</p>
+          <span class="review__author">Ольга П.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2>Частые вопросы</h2>
+      <div class="faq__list">
+        <details class="faq__item">
+          <summary>Нужен ли залог при аренде?</summary>
+          <p>Наличный залог не требуется — оформляем по паспорту и привязываем банковскую карту для безналичного списания в случае ущерба.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Что делать, если сел заряд во время поездки?</summary>
+          <p>Звоните на горячую линию — привезём заряженный аккумулятор или подменный велосипед в пределах МКАД за 30–40 минут.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Можно ли выкупить арендованный велосипед?</summary>
+          <p>Да, при долгосрочной аренде от 3 месяцев часть внесённых платежей засчитывается в стоимость выкупа.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Обслуживаете велосипеды других брендов?</summary>
+          <p>Да, сервисный центр принимает электровелосипеды любых марок — от диагностики до замены мотор-колеса.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Сколько длится доставка при аренде?</summary>
+          <p>В пределах МКАД — в среднем 30 минут после подтверждения заявки, за МКАД срок уточняем отдельно.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Даёте гарантию на новые велосипеды?</summary>
+          <p>12 месяцев на раму и электронику, 6 месяцев на аккумулятор — с бесплатным ремонтом по гарантийным случаям.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section" id="form">
+    <div class="container form-section__grid">
+      <div class="form-card">
+        <h2>Оставить заявку</h2>
+        <p>Ответим в течение 15 минут в рабочее время и подберём модель под вашу задачу.</p>
+        <form id="leadForm" class="form">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <label>
+            <span>Имя</span>
+            <input type="text" name="name" placeholder="Как к вам обращаться" required>
+          </label>
+          <label>
+            <span>Телефон</span>
+            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+          </label>
+          <label>
+            <span>Интересует</span>
+            <select name="interest">
+              <option>Аренда почасовая/посуточная</option>
+              <option>Аренда помесячная</option>
+              <option>Покупка нового велосипеда</option>
+              <option>Ремонт и сервис</option>
+            </select>
+          </label>
+          <label>
+            <span>Комментарий</span>
+            <textarea name="comment" rows="3" placeholder="Модель, сроки, район подачи — необязательно"></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+          <span class="form__note">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html">политикой обработки данных</a></span>
+        </form>
+      </div>
+      <div class="map-card">
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=37.617698%2C55.751244&z=12" width="100%" height="100%" frameborder="0" title="Карта — шоурум VOLT"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__col">
+      <a href="#top" class="logo logo--footer"><span class="logo__bolt">⚡</span>VOLT<span class="logo__suffix">-bike</span></a>
+      <p>Аренда, продажа и сервис электровелосипедов в Москве.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Контакты</h4>
+      <p><a href="tel:+79001234567">+7 (900) 123-45-67</a></p>
+      <p><a href="mailto:info@volt-ebike.ru">info@volt-ebike.ru</a></p>
+      <p>Москва, Ленинский проспект, 15 (шоурум)</p>
+    </div>
+    <div class="footer__col">
+      <h4>Разделы</h4>
+      <p><a href="#rent">Аренда</a></p>
+      <p><a href="#sale">Продажа</a></p>
+      <p><a href="#service">Сервис</a></p>
+      <p><a href="privacy.html">Политика конфиденциальности</a></p>
+    </div>
+    <div class="footer__col">
+      <h4>Режим работы</h4>
+      <p>Пн–Вс: 09:00–21:00</p>
+      <p>Без выходных</p>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span id="year"></span> © VOLT. Все права защищены.
+  </div>
+</footer>
+
+<div class="fab">
+  <a href="https://wa.me/79001234567" target="_blank" rel="noopener" class="fab__btn fab__btn--wa" aria-label="WhatsApp">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2Zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C4 14.7 3.6 13.4 3.6 12c0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.8 8.4-8.4 8.4Zm4.6-6.3c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.2.2-.3.2-.5.1-1.4-.7-2.3-1.2-3.2-2.8-.2-.4.2-.4.6-1.2.1-.2 0-.3-.1-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9 1-.9 2.3s1 2.7 1.1 2.9c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+  </a>
+  <a href="https://t.me/volt_ebike" target="_blank" rel="noopener" class="fab__btn fab__btn--tg" aria-label="Telegram">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.5 18.6 20c-.2.9-.9 1.1-1.7.7l-4.7-3.5-2.3 2.2c-.2.2-.5.4-.9.4l.3-4.6 8.4-7.6c.4-.3-.1-.5-.5-.2L6.6 13.1l-4.5-1.4c-1-.3-1-1 .2-1.5L20.6 3.4c.8-.3 1.5.2 1.3 1.1Z"/></svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
